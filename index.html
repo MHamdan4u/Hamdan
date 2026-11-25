@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name – Graphic design and documentaries</title>
+  <meta name="description" content="Student designer and documentary writer. Browse my design work and read my documentaries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="nav-name">Your Name</a>
+  <nav aria-label="Main">
+    <a href="#work">Design</a>
+    <a href="#docs">Documentaries</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>I design things<br>and write about<br>real life.</h1>
+    <p class="hero-sub">I'm a student making graphic design and short documentaries. This is where I keep both.</p>
+  </section>
+
+  <!-- DESIGN WORK -->
+  <section id="work" class="section">
+    <h2>Design</h2>
+    <div class="filters" role="group" aria-label="Filter design work">
+      <button class="chip is-active" data-filter="all">All</button>
+      <button class="chip" data-filter="poster">Posters</button>
+      <button class="chip" data-filter="logo">Logos</button>
+      <button class="chip" data-filter="social">Social</button>
+    </div>
+
+    <div class="grid">
+      <!-- To use a real image: replace the <div class="ph"> line with
+           <img src="images/your-file.jpg" alt="Describe the design"> -->
+      <figure class="tile tall" data-cat="poster">
+        <div class="ph ph-a"></div>
+        <figcaption>Midnight Market poster<span>Poster, 2026</span></figcaption>
+      </figure>
+      <figure class="tile" data-cat="logo">
+        <div class="ph ph-b"></div>
+        <figcaption>Harbor Café mark<span>Logo, 2026</span></figcaption>
+      </figure>
+      <figure class="tile" data-cat="social">
+        <div class="ph ph-c"></div>
+        <figcaption>Film club series<span>Social, 2025</span></figcaption>
+      </figure>
+      <figure class="tile wide" data-cat="poster">
+        <div class="ph ph-d"></div>
+        <figcaption>City Sounds festival<span>Poster, 2025</span></figcaption>
+      </figure>
+      <figure class="tile" data-cat="logo">
+        <div class="ph ph-e"></div>
+        <figcaption>Study Group badge<span>Logo, 2025</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- DOCUMENTARIES -->
+  <section id="docs" class="section">
+    <h2>Documentaries</h2>
+    <p class="lead">Select a title to read it here. Add a video link inside any entry if you have one.</p>
+
+    <div class="docs">
+      <details class="doc">
+        <summary>
+          <span class="doc-title">The Last Tailor on Mill Street</span>
+          <span class="doc-meta">8 min read · March 2026</span>
+        </summary>
+        <div class="doc-body">
+          <p>Replace this text with your documentary. Write it as long as you like. Each blank line between paragraphs starts a new one when you wrap it in its own &lt;p&gt; tag.</p>
+          <p>You can also embed a video by pasting a YouTube or Vimeo embed code right here.</p>
+        </div>
+      </details>
+
+      <details class="doc">
+        <summary>
+          <span class="doc-title">Fifty Rupees and a Bicycle</span>
+          <span class="doc-meta">5 min read · January 2026</span>
+        </summary>
+        <div class="doc-body">
+          <p>Your second documentary goes here.</p>
+        </div>
+      </details>
+
+      <details class="doc">
+        <summary>
+          <span class="doc-title">What the River Remembers</span>
+          <span class="doc-meta">12 min read · October 2025</span>
+        </summary>
+        <div class="doc-body">
+          <p>Your third documentary goes here.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <h2>About</h2>
+    <div class="about-grid">
+      <div class="portrait" role="img" aria-label="Portrait placeholder"></div>
+      <div class="about-text">
+        <p>Hi, I'm Your Name. I'm a student in Your City, and I've been making graphic design for fun since Year. I like bold type, quiet layouts, and stories about ordinary people.</p>
+        <p>I write documentaries about the places and people around me. Design is how I make them look the way they feel.</p>
+        <p class="tools">Tools I use: Photoshop, Illustrator, Figma, Canva.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2>Say hello</h2>
+    <p class="lead">Want a poster, a logo, or just to talk about a documentary?</p>
+    <a class="btn" href="mailto:you@example.com">Email me</a>
+    <ul class="links">
+      <li><a href="https://instagram.com/yourhandle">Instagram</a></li>
+      <li><a href="https://behance.net/yourhandle">Behance</a></li>
+      <li><a href="https://github.com/yourusername">GitHub</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">© <span id="year"></span> Your Name</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
